@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Stackly Food - Premium culinary experiences with farm-to-table freshness. Explore our gourmet menu, catering services, and more.">
+  <title>Stackly || Food Industry</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="index.html" class="navbar-brand">
+      <img src="images/logo.webp" alt="Stackly Logo" class="logo-img">
+      <span class="brand-text">Stackly</span>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active"><i class="bi bi-house-door"></i> Home</a></li>
+      <li><a href="about.html"><i class="bi bi-info-circle"></i> About</a></li>
+      <li><a href="menu.html"><i class="bi bi-book"></i> Menu</a></li>
+      <li><a href="services.html"><i class="bi bi-gear"></i> Services</a></li>
+      <li><a href="blog.html"><i class="bi bi-journal-text"></i> Blog</a></li>
+      <li><a href="contact.html"><i class="bi bi-envelope"></i> Contact</a></li>
+      <li class="profile-dropdown">
+        <button class="profile-btn" onclick="toggleDropdown()" aria-label="Profile menu">
+          <i class="bi bi-person-circle"></i>
+        </button>
+        <div class="dropdown-menu" id="profileDropdown">
+          <a href="login.html"><i class="bi bi-box-arrow-in-right"></i> Login</a>
+          <a href="register.html"><i class="bi bi-person-plus"></i> Register</a>
+        </div>
+      </li>
+    </ul>
+
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="nav-overlay" id="navOverlay"></div>
+
+<!-- ===== SECTION 1: HERO ===== -->
+<section class="hero-section" id="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="bi bi-star-fill"></i> Premium Culinary Experience
+        </div>
+        <h1 class="hero-title">
+          Fresh Flavors,<br><span>Crafted with Love</span>
+        </h1>
+        <p class="hero-text">
+          From farm-fresh ingredients to chef-crafted masterpieces, we bring you culinary experiences that delight every sense. Dine-in or delivered to your doorstep.
+        </p>
+        <div class="hero-buttons">
+          <a href="error.html" class="btn-primary">
+            <i class="bi bi-book"></i> Explore Menu
+          </a>
+          <a href="error.html" class="btn-secondary">
+            <i class="bi bi-play-circle"></i> How We Cook
+          </a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/hero-food.webp" alt="Delicious gourmet food">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 2: STATS ===== -->
+<section class="stats-section" id="stats">
+  <div class="container">
+    <h2 class="stats-title">Award-Winning <span>Culinary Excellence</span></h2>
+    <div class="stats-grid">
+      <div class="stat-card fade-up">
+        <div class="stat-icon"><i class="bi bi-egg-fried"></i></div>
+        <div class="stat-number counter" data-target="5000" data-suffix="+">0</div>
+        <div class="stat-label">Dishes Served Daily</div>
+      </div>
+      <div class="stat-card fade-up">
+        <div class="stat-icon"><i class="bi bi-journal-bookmark"></i></div>
+        <div class="stat-number counter" data-target="120" data-suffix="+">0</div>
+        <div class="stat-label">Signature Recipes</div>
+      </div>
+      <div class="stat-card fade-up">
+        <div class="stat-icon"><i class="bi bi-people"></i></div>
+        <div class="stat-number counter" data-target="50" data-suffix="+">0</div>
+        <div class="stat-label">Expert Chefs</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 3: WHY CHOOSE US (TABS) ===== -->
+<section class="why-section" id="why">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-subtitle">Why Stackly?</div>
+      <h2 class="section-title">Why Choose Our Kitchen</h2>
+      <p class="section-desc">We combine the finest ingredients with culinary artistry to deliver unforgettable dining experiences.</p>
+    </div>
+
+    <div class="tab-buttons fade-up">
+      <button class="tab-btn active" data-tab="freshness" onclick="switchTab('freshness')">
+        <i class="bi bi-leaf"></i> Freshness
+      </button>
+      <button class="tab-btn" data-tab="quality" onclick="switchTab('quality')">
+        <i class="bi bi-award"></i> Quality
+      </button>
+      <button class="tab-btn" data-tab="taste" onclick="switchTab('taste')">
+        <i class="bi bi-heart"></i> Taste
+      </button>
+    </div>
+
+    <div class="tab-content active" id="freshness">
+      <div class="feature-grid">
+        <div class="feature-card fade-up">
+          <div class="feature-icon"><i class="bi bi-flower1"></i></div>
+          <h4>Farm to Table</h4>
+          <p>Sourced directly from local farms for maximum freshness and sustainability.</p>
+        </div>
+        <div class="feature-card fade-up">
+          <div class="feature-icon"><i class="bi bi-clock"></i></div>
+          <h4>Daily Harvest</h4>
+          <p>Ingredients are harvested and delivered daily to our kitchen.</p>
+        </div>
+        <div class="feature-card fade-up">
+          <div class="feature-icon"><i class="bi bi-droplet"></i></div>
+          <h4>No Preservatives</h4>
+          <p>100% natural ingredients with zero artificial preservatives.</p>
+        </div>
+        <div class="feature-card fade-up">
+          <div class="feature-icon"><i class="bi bi-recycle"></i></div>
+          <h4>Eco-Friendly</h4>
+          <p>Sustainable packaging and zero-waste kitchen practices.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-content" id="quality">
+      <div class="feature-grid">
+        <div class="feature-card fade-up">
+          <div class="feature-icon"><i class="bi bi-shield-check"></i></div>
+          <h4>FSSAI Certified</h4>
+          <p>All our operations are fully certified and compliant with food safety standards.</p>
+        </div>
+        <div class="feature-card fade-up">
+          <div class="feature-icon"><i class="bi bi-thermometer-half"></i></div>
+          <h4>Quality Control</h4>
+          <p>Multi-point quality checks from kitchen to delivery.</p>
+        </div>
+        <div class="feature-card fade-up">
+          <div class="feature-icon"><i class="bi bi-hand-thumbs-up"></i></div>
+          <h4>Premium Grade</h4>
+          <p>Only the finest grade ingredients make it to your plate.</p>
+        </div>
+        <div class="feature-card fade-up">
+          <div class="feature-icon"><i class="bi bi-clipboard-check"></i></div>
+          <h4>Hygiene Standards</h4>
+          <p>State-of-the-art kitchen with the highest hygiene protocols.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-content" id="taste">
+      <div class="feature-grid">
+        <div class="feature-card fade-up">
+          <div class="feature-icon"><i class="bi bi-fire"></i></div>
+          <h4>Authentic Recipes</h4>
+          <p>Traditional recipes passed down through generations of culinary masters.</p>
+        </div>
+        <div class="feature-card fade-up">
+          <div class="feature-icon"><i class="bi bi-globe2"></i></div>
+          <h4>Global Flavors</h4>
+          <p>A world of cuisines from Italian, Asian, Indian, and Mediterranean kitchens.</p>
+        </div>
+        <div class="feature-card fade-up">
+          <div class="feature-icon"><i class="bi bi-palette"></i></div>
+          <h4>Chef's Specials</h4>
+          <p>Unique creations by our award-winning chefs, available exclusively.</p>
+        </div>
+        <div class="feature-card fade-up">
+          <div class="feature-icon"><i class="bi bi-emoji-smile"></i></div>
+          <h4>Custom Flavors</h4>
+          <p>Personalize spice levels and ingredients to match your taste preferences.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 4: PLATFORM (Dine-In / Delivery) ===== -->
+<section class="platform-section" id="platform">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-subtitle">Experience</div>
+      <h2 class="section-title">Dine-In or Delivery, We've Got You</h2>
+    </div>
+    <div class="platform-grid">
+      <div class="platform-card fade-up">
+        <img src="images/dine-in.webp" alt="Dine-in experience">
+        <h3>Dine-In Experience</h3>
+        <p>Immerse yourself in our warm, elegant ambiance. From candlelit dinners to family gatherings, our restaurant offers the perfect setting for every occasion.</p>
+        <a href="error.html" class="learn-link">Know More <i class="bi bi-arrow-right"></i></a>
+      </div>
+      <div class="platform-card fade-up">
+        <img src="images/delivery.webp" alt="Home delivery">
+        <h3>Home Delivery</h3>
+        <p>Enjoy restaurant-quality meals in the comfort of your home. Our carefully packed deliveries ensure your food arrives fresh, hot, and ready to enjoy.</p>
+        <a href="error.html" class="learn-link">Know More <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 5: OUR SERVICES GRID ===== -->
+<section class="services-section" id="services">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-subtitle">Our Services</div>
+      <h2 class="section-title">Savor Every Bite</h2>
+      <p class="section-desc">From catering to cooking classes, we offer a range of culinary services tailored to your needs.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-up">
+        <div class="service-icon"><i class="bi bi-truck"></i></div>
+        <h4>Catering Services</h4>
+        <p>Premium catering for weddings, corporate events, and private parties.</p>
+        <a href="error.html" class="learn-link">Learn More <i class="bi bi-arrow-right"></i></a>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon"><i class="bi bi-lamp"></i></div>
+        <h4>Private Dining</h4>
+        <p>Exclusive dining rooms for intimate celebrations and business meetings.</p>
+        <a href="error.html" class="learn-link">Learn More <i class="bi bi-arrow-right"></i></a>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon"><i class="bi bi-mortarboard"></i></div>
+        <h4>Cooking Classes</h4>
+        <p>Learn from our master chefs with hands-on cooking workshops.</p>
+        <a href="error.html" class="learn-link">Learn More <i class="bi bi-arrow-right"></i></a>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon"><i class="bi bi-calendar-week"></i></div>
+        <h4>Meal Plans</h4>
+        <p>Customized weekly and monthly meal subscription plans for healthy eating.</p>
+        <a href="error.html" class="learn-link">Learn More <i class="bi bi-arrow-right"></i></a>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon"><i class="bi bi-building"></i></div>
+        <h4>Corporate Events</h4>
+        <p>Tailored food experiences for corporate gatherings and team celebrations.</p>
+        <a href="error.html" class="learn-link">Learn More <i class="bi bi-arrow-right"></i></a>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon"><i class="bi bi-flower2"></i></div>
+        <h4>Farm-to-Table</h4>
+        <p>Direct partnerships with local farms ensuring the freshest ingredients.</p>
+        <a href="error.html" class="learn-link">Learn More <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 6: SMALL BUSINESS ===== -->
+<section class="small-biz-section" id="small-biz">
+  <div class="container">
+    <div class="small-biz-grid">
+      <div class="small-biz-content fade-up">
+        <div class="section-subtitle">For Restaurants & Cafés</div>
+        <h2>Built for Small Food Businesses</h2>
+        <p>Whether you run a cozy café or a bustling restaurant, Stackly provides the tools and ingredients to elevate your culinary offerings.</p>
+        <ul class="biz-features">
+          <li><i class="bi bi-check-circle-fill"></i> Easy online ordering system</li>
+          <li><i class="bi bi-check-circle-fill"></i> Kitchen inventory management</li>
+          <li><i class="bi bi-check-circle-fill"></i> Affordable wholesale pricing</li>
+          <li><i class="bi bi-check-circle-fill"></i> Recipe standardization tools</li>
+          <li><i class="bi bi-check-circle-fill"></i> 24/7 culinary support</li>
+        </ul>
+        <a href="error.html" class="btn-primary" style="margin-top: 24px;">
+          <i class="bi bi-arrow-right"></i> Know More
+        </a>
+      </div>
+      <div class="small-biz-image fade-up">
+        <img src="images/about-kitchen.webp" alt="Restaurant kitchen">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 7: SPOTLIGHT ===== -->
+<section class="spotlight-section" id="spotlight">
+  <div class="container">
+    <div class="spotlight-grid">
+      <div class="spotlight-image fade-up">
+        <img src="images/spotlight.webp" alt="Signature recipe">
+      </div>
+      <div class="spotlight-content fade-up">
+        <div class="section-subtitle">Signature Collection</div>
+        <h2 class="section-title" style="text-align:left">Maximize Flavor with Our Signature Recipes</h2>
+        <ul class="spotlight-list">
+          <li>
+            <i class="bi bi-fire"></i>
+            <div>
+              <h4>Flame-Grilled Perfection</h4>
+              <p>Every dish is prepared with precision over open flames for that authentic smoky flavor.</p>
+            </div>
+          </li>
+          <li>
+            <i class="bi bi-droplet-half"></i>
+            <div>
+              <h4>Secret Marinades</h4>
+              <p>Our proprietary marinades are crafted from rare spices sourced across the globe.</p>
+            </div>
+          </li>
+          <li>
+            <i class="bi bi-palette2"></i>
+            <div>
+              <h4>Artful Presentation</h4>
+              <p>Each plate is a canvas, designed to delight your eyes before your taste buds.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 8: SOLUTIONS GRID ===== -->
+<section class="solutions-section" id="solutions">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-subtitle">Explore</div>
+      <h2 class="section-title">Something for Every Craving</h2>
+    </div>
+    <div class="solutions-grid">
+      <div class="solution-card fade-up">
+        <i class="bi bi-sunrise"></i>
+        <h4>Breakfast Specials</h4>
+        <p>Start your day with our energizing breakfast options, from healthy bowls to hearty stacks.</p>
+        <a href="error.html" class="learn-link">Learn More <i class="bi bi-arrow-right"></i></a>
+      </div>
+      <div class="solution-card fade-up">
+        <i class="bi bi-sun"></i>
+        <h4>Lunch Combos</h4>
+        <p>Power through your day with our perfectly balanced lunch combinations and deals.</p>
+        <a href="error.html" class="learn-link">Learn More <i class="bi bi-arrow-right"></i></a>
+      </div>
+      <div class="solution-card fade-up">
+        <i class="bi bi-moon-stars"></i>
+        <h4>Dinner Menus</h4>
+        <p>Indulge in our curated dinner experiences with multi-course gourmet selections.</p>
+        <a href="error.html" class="learn-link">Learn More <i class="bi bi-arrow-right"></i></a>
+      </div>
+      <div class="solution-card fade-up">
+        <i class="bi bi-cake2"></i>
+        <h4>Dessert Bar</h4>
+        <p>End on a sweet note with artisan desserts, pastries, and our famous chocolate lava cake.</p>
+        <a href="error.html" class="learn-link">Learn More <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 9: FOOTER ===== -->
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="navbar-brand">
+          <img src="images/logo.webp" alt="Stackly Logo" class="logo-img">
+          <span class="brand-text">Stackly</span>
+        </a>
+        <p>Premium culinary experiences from farm to table. Crafted with love, served with passion.</p>
+        <div class="footer-socials">
+          <a href="error.html" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="error.html" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="error.html" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="error.html" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="error.html" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="error.html">Careers</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="error.html">Press</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Catering</a></li>
+          <li><a href="error.html">Private Dining</a></li>
+          <li><a href="error.html">Cooking Classes</a></li>
+          <li><a href="error.html">Meal Plans</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="error.html">FAQ</a></li>
+          <li><a href="error.html">Privacy Policy</a></li>
+          <li><a href="error.html">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Stackly Food Industries. All rights reserved. Designed with <i class="bi bi-heart-fill" style="color:var(--accent)"></i> by Stackly</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

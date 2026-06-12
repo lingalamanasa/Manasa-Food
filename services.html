@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Stackly Food Services - Catering, private dining, cooking classes, meal subscriptions, and corporate events for every occasion.">
+  <title>Stackly || Services</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/services.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="index.html" class="navbar-brand"><img src="images/logo.webp" alt="Stackly Logo" class="logo-img"><span class="brand-text">Stackly</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html"><i class="bi bi-house-door"></i> Home</a></li>
+      <li><a href="about.html"><i class="bi bi-info-circle"></i> About</a></li>
+      <li><a href="menu.html"><i class="bi bi-book"></i> Menu</a></li>
+      <li><a href="services.html" class="active"><i class="bi bi-gear"></i> Services</a></li>
+      <li><a href="blog.html"><i class="bi bi-journal-text"></i> Blog</a></li>
+      <li><a href="contact.html"><i class="bi bi-envelope"></i> Contact</a></li>
+      <li class="profile-dropdown">
+        <button class="profile-btn" onclick="toggleDropdown()"><i class="bi bi-person-circle"></i></button>
+        <div class="dropdown-menu"><a href="login.html"><i class="bi bi-box-arrow-in-right"></i> Login</a><a href="register.html"><i class="bi bi-person-plus"></i> Register</a></div>
+      </li>
+    </ul>
+    <button class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav-overlay"></div>
+
+<!-- SECTION 1: SERVICES GRID -->
+<section class="page-hero">
+  <div class="container">
+    <h1>Our <span style="background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent">Services</span></h1>
+    <p>Comprehensive culinary solutions tailored to your every need — from events to daily meals.</p>
+  </div>
+</section>
+
+<section class="services-section" style="padding-top:60px">
+  <div class="container">
+    <div class="services-grid">
+      <div class="service-card fade-up">
+        <div class="service-icon"><i class="bi bi-truck"></i></div>
+        <h4>Catering Services</h4>
+        <p>Premium catering for weddings, birthday parties, corporate events, and private gatherings of any size.</p>
+        <a href="error.html" class="learn-link">Learn More <i class="bi bi-arrow-right"></i></a>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon"><i class="bi bi-lamp"></i></div>
+        <h4>Private Dining</h4>
+        <p>Exclusive private dining rooms for intimate celebrations, business dinners, and special occasions.</p>
+        <a href="error.html" class="learn-link">Learn More <i class="bi bi-arrow-right"></i></a>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon"><i class="bi bi-mortarboard"></i></div>
+        <h4>Cooking Classes</h4>
+        <p>Hands-on cooking workshops with our master chefs. Perfect for beginners and enthusiasts alike.</p>
+        <a href="error.html" class="learn-link">Learn More <i class="bi bi-arrow-right"></i></a>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon"><i class="bi bi-calendar-week"></i></div>
+        <h4>Meal Subscriptions</h4>
+        <p>Weekly and monthly meal plans customized to your dietary preferences and lifestyle needs.</p>
+        <a href="error.html" class="learn-link">Learn More <i class="bi bi-arrow-right"></i></a>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon"><i class="bi bi-building"></i></div>
+        <h4>Corporate Events</h4>
+        <p>Tailored food experiences for conferences, team builds, product launches, and company celebrations.</p>
+        <a href="error.html" class="learn-link">Learn More <i class="bi bi-arrow-right"></i></a>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon"><i class="bi bi-pencil-square"></i></div>
+        <h4>Custom Menu Design</h4>
+        <p>Work with our chefs to create bespoke menus for your restaurant, café, or food business.</p>
+        <a href="error.html" class="learn-link">Learn More <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 2: CTA BANNER -->
+<section class="service-cta-banner">
+  <div class="container fade-up">
+    <h2>Elevate Your Events with Stackly</h2>
+    <p>From intimate dinners to grand celebrations, our culinary team makes every event unforgettable.</p>
+    <a href="error.html" class="btn-primary"><i class="bi bi-calendar-check"></i> Book Now</a>
+  </div>
+</section>
+
+<!-- SECTION 3: PRICING PLANS -->
+<section class="pricing-section">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-subtitle">Pricing</div>
+      <h2 class="section-title">Choose Your Meal Plan</h2>
+      <p class="section-desc">Flexible pricing for every appetite and budget.</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="pricing-card fade-up">
+        <div class="plan-icon"><i class="bi bi-cup-hot"></i></div>
+        <h3>Basic</h3>
+        <div class="price">₹999</div>
+        <div class="price-period">per month</div>
+        <ul class="pricing-features">
+          <li><i class="bi bi-check-circle-fill"></i> 20 meals per month</li>
+          <li><i class="bi bi-check-circle-fill"></i> Standard menu access</li>
+          <li><i class="bi bi-check-circle-fill"></i> Free delivery (5km)</li>
+          <li><i class="bi bi-check-circle-fill"></i> Email support</li>
+          <li class="disabled"><i class="bi bi-x-circle"></i> Chef's specials</li>
+          <li class="disabled"><i class="bi bi-x-circle"></i> Priority delivery</li>
+        </ul>
+        <a href="error.html" class="btn-secondary" style="width:100%;justify-content:center">Get Started</a>
+      </div>
+      <div class="pricing-card featured fade-up">
+        <div class="plan-icon"><i class="bi bi-star"></i></div>
+        <h3>Premium</h3>
+        <div class="price">₹1,999</div>
+        <div class="price-period">per month</div>
+        <ul class="pricing-features">
+          <li><i class="bi bi-check-circle-fill"></i> 45 meals per month</li>
+          <li><i class="bi bi-check-circle-fill"></i> Full menu access</li>
+          <li><i class="bi bi-check-circle-fill"></i> Free delivery (15km)</li>
+          <li><i class="bi bi-check-circle-fill"></i> Priority support</li>
+          <li><i class="bi bi-check-circle-fill"></i> Chef's specials included</li>
+          <li class="disabled"><i class="bi bi-x-circle"></i> Cooking class access</li>
+        </ul>
+        <a href="error.html" class="btn-primary" style="width:100%;justify-content:center">Get Started</a>
+      </div>
+      <div class="pricing-card fade-up">
+        <div class="plan-icon"><i class="bi bi-gem"></i></div>
+        <h3>Enterprise</h3>
+        <div class="price">₹3,999</div>
+        <div class="price-period">per month</div>
+        <ul class="pricing-features">
+          <li><i class="bi bi-check-circle-fill"></i> Unlimited meals</li>
+          <li><i class="bi bi-check-circle-fill"></i> Full menu + custom dishes</li>
+          <li><i class="bi bi-check-circle-fill"></i> Free nationwide delivery</li>
+          <li><i class="bi bi-check-circle-fill"></i> 24/7 dedicated support</li>
+          <li><i class="bi bi-check-circle-fill"></i> Chef's specials included</li>
+          <li><i class="bi bi-check-circle-fill"></i> Monthly cooking class</li>
+        </ul>
+        <a href="error.html" class="btn-secondary" style="width:100%;justify-content:center">Contact Sales</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4: HOW IT WORKS -->
+<section class="how-it-works">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-subtitle">Simple Process</div>
+      <h2 class="section-title">How It Works</h2>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card fade-up">
+        <div class="step-number">01</div>
+        <h4>Browse Our Menu</h4>
+        <p>Explore our diverse collection of chef-crafted dishes and pick your favorites.</p>
+      </div>
+      <div class="step-card fade-up">
+        <div class="step-number">02</div>
+        <h4>Place Your Order</h4>
+        <p>Customize your meal, choose delivery or dine-in, and confirm your order.</p>
+      </div>
+      <div class="step-card fade-up">
+        <div class="step-number">03</div>
+        <h4>Enjoy Your Meal</h4>
+        <p>Sit back and savor every bite of your freshly prepared gourmet meal.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5: FAQ -->
+<section class="faq-section">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-subtitle">FAQ</div>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-list fade-up">
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <span>What areas do you deliver to?</span>
+          <i class="bi bi-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>We currently deliver to all major cities and surrounding areas within a 25km radius. For corporate and event catering, we provide nationwide coverage.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <span>Do you accommodate dietary restrictions?</span>
+          <i class="bi bi-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>Absolutely! We offer vegetarian, vegan, gluten-free, dairy-free, and nut-free options. Our chefs can customize any dish to meet your specific dietary needs.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <span>How far in advance should I book catering?</span>
+          <i class="bi bi-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>We recommend booking at least 2 weeks in advance for small events and 4-6 weeks for larger gatherings. Last-minute bookings may be available based on capacity.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <span>Can I cancel or modify my meal subscription?</span>
+          <i class="bi bi-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>Yes, you can modify or cancel your subscription at any time with at least 48 hours notice before your next delivery. No cancellation fees apply.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <span>What food safety certifications do you have?</span>
+          <i class="bi bi-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>We are FSSAI certified and follow ISO 22000 food safety management standards. Our kitchen is regularly audited for hygiene and quality compliance.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="navbar-brand"><img src="images/logo.webp" alt="Stackly Logo" class="logo-img"><span class="brand-text">Stackly</span></a>
+        <p>Premium culinary experiences from farm to table. Crafted with love, served with passion.</p>
+        <div class="footer-socials"><a href="error.html"><i class="bi bi-facebook"></i></a><a href="error.html"><i class="bi bi-twitter-x"></i></a><a href="error.html"><i class="bi bi-instagram"></i></a><a href="error.html"><i class="bi bi-linkedin"></i></a><a href="error.html"><i class="bi bi-youtube"></i></a></div>
+      </div>
+      <div class="footer-column"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="error.html">Careers</a></li><li><a href="blog.html">Blog</a></li><li><a href="error.html">Press</a></li></ul></div>
+      <div class="footer-column"><h4>Services</h4><ul><li><a href="services.html">Catering</a></li><li><a href="error.html">Private Dining</a></li><li><a href="error.html">Cooking Classes</a></li><li><a href="error.html">Meal Plans</a></li></ul></div>
+      <div class="footer-column"><h4>Support</h4><ul><li><a href="contact.html">Contact Us</a></li><li><a href="error.html">FAQ</a></li><li><a href="error.html">Privacy Policy</a></li><li><a href="error.html">Terms of Service</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2024 Stackly Food Industries. All rights reserved.</p></div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

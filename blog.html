@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Stackly Food Blog - Discover recipes, health tips, industry news, and culinary insights from our expert chefs.">
+  <title>Stackly || Blog</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/blog.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="index.html" class="navbar-brand"><img src="images/logo.webp" alt="Stackly Logo" class="logo-img"><span class="brand-text">Stackly</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html"><i class="bi bi-house-door"></i> Home</a></li>
+      <li><a href="about.html"><i class="bi bi-info-circle"></i> About</a></li>
+      <li><a href="menu.html"><i class="bi bi-book"></i> Menu</a></li>
+      <li><a href="services.html"><i class="bi bi-gear"></i> Services</a></li>
+      <li><a href="blog.html" class="active"><i class="bi bi-journal-text"></i> Blog</a></li>
+      <li><a href="contact.html"><i class="bi bi-envelope"></i> Contact</a></li>
+      <li class="profile-dropdown">
+        <button class="profile-btn" onclick="toggleDropdown()"><i class="bi bi-person-circle"></i></button>
+        <div class="dropdown-menu"><a href="login.html"><i class="bi bi-box-arrow-in-right"></i> Login</a><a href="register.html"><i class="bi bi-person-plus"></i> Register</a></div>
+      </li>
+    </ul>
+    <button class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav-overlay"></div>
+
+<!-- SECTION 1: HERO -->
+<section class="page-hero">
+  <div class="container">
+    <h1>Our <span style="background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent">Blog</span></h1>
+    <p>Stories, recipes, and insights from the world of Stackly culinary arts.</p>
+    <div class="menu-search" style="max-width:500px;margin:20px auto 0;position:relative">
+      <i class="bi bi-search" style="position:absolute;left:18px;top:50%;transform:translateY(-50%);color:var(--text-muted)"></i>
+      <input type="text" placeholder="Search articles..." style="width:100%;padding:14px 20px 14px 48px;background:var(--bg-card);border:1px solid var(--border-color);border-radius:50px;color:var(--text-primary);font-size:0.95rem;font-family:var(--font);outline:none">
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 2: FEATURED POST -->
+<section class="featured-post">
+  <div class="container">
+    <div class="section-header fade-up" style="margin-bottom:30px">
+      <div class="section-subtitle">Featured</div>
+      <h2 class="section-title">Editor's Pick</h2>
+    </div>
+    <div class="featured-card fade-up">
+      <img src="images/spotlight.webp" alt="Featured blog post">
+      <div class="featured-body">
+        <div class="blog-meta">
+          <span class="blog-category">Recipes</span>
+          <span class="blog-date"><i class="bi bi-calendar3"></i> June 10, 2024</span>
+        </div>
+        <h2>The Art of Slow Cooking: How Patience Creates Perfection</h2>
+        <p>Discover why the world's top chefs swear by slow-cooking techniques and how you can master this ancient art in your own kitchen. From tender braised meats to rich, layered flavors...</p>
+        <a href="error.html" class="btn-primary"><i class="bi bi-arrow-right"></i> Read More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3: BLOG GRID -->
+<section class="blog-grid-section">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-subtitle">Latest Posts</div>
+      <h2 class="section-title">Fresh From Our Kitchen Blog</h2>
+    </div>
+    <div class="blog-grid">
+
+      <div class="blog-card fade-up">
+        <img src="images/menu-1.webp" alt="Blog post">
+        <div class="blog-card-body">
+          <div class="blog-meta">
+            <span class="blog-category">Health</span>
+            <span class="blog-date"><i class="bi bi-calendar3"></i> June 8, 2024</span>
+          </div>
+          <h4>5 Superfoods You Should Add to Your Daily Diet</h4>
+          <p>Boost your immunity and energy levels with these nutrient-packed superfoods recommended by our nutritionists.</p>
+          <a href="error.html" class="learn-link">Read More <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="blog-card fade-up">
+        <img src="images/menu-2.webp" alt="Blog post">
+        <div class="blog-card-body">
+          <div class="blog-meta">
+            <span class="blog-category">Recipes</span>
+            <span class="blog-date"><i class="bi bi-calendar3"></i> June 5, 2024</span>
+          </div>
+          <h4>Master the Perfect Pasta: Tips from Chef Marcus</h4>
+          <p>Our head chef reveals the secrets to cooking restaurant-quality pasta at home every single time.</p>
+          <a href="error.html" class="learn-link">Read More <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="blog-card fade-up">
+        <img src="images/about-kitchen.webp" alt="Blog post">
+        <div class="blog-card-body">
+          <div class="blog-meta">
+            <span class="blog-category">Industry</span>
+            <span class="blog-date"><i class="bi bi-calendar3"></i> June 2, 2024</span>
+          </div>
+          <h4>The Future of Farm-to-Table: Trends to Watch in 2024</h4>
+          <p>How sustainability and technology are reshaping the food industry from production to your plate.</p>
+          <a href="error.html" class="learn-link">Read More <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="blog-card fade-up">
+        <img src="images/menu-5.webp" alt="Blog post">
+        <div class="blog-card-body">
+          <div class="blog-meta">
+            <span class="blog-category">Tips</span>
+            <span class="blog-date"><i class="bi bi-calendar3"></i> May 28, 2024</span>
+          </div>
+          <h4>Kitchen Hacks: 10 Time-Saving Tips for Busy Cooks</h4>
+          <p>Streamline your cooking routine with these professional tips that save time without sacrificing flavor.</p>
+          <a href="error.html" class="learn-link">Read More <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="blog-card fade-up">
+        <img src="images/dine-in.webp" alt="Blog post">
+        <div class="blog-card-body">
+          <div class="blog-meta">
+            <span class="blog-category">Lifestyle</span>
+            <span class="blog-date"><i class="bi bi-calendar3"></i> May 24, 2024</span>
+          </div>
+          <h4>How to Host the Perfect Dinner Party at Home</h4>
+          <p>From table settings to menu planning — everything you need for an unforgettable dinner evening.</p>
+          <a href="error.html" class="learn-link">Read More <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="blog-card fade-up">
+        <img src="images/delivery.webp" alt="Blog post">
+        <div class="blog-card-body">
+          <div class="blog-meta">
+            <span class="blog-category">News</span>
+            <span class="blog-date"><i class="bi bi-calendar3"></i> May 20, 2024</span>
+          </div>
+          <h4>Stackly Expands Delivery to 5 New Cities This Summer</h4>
+          <p>Great news for food lovers! Our premium delivery service is now available in more locations.</p>
+          <a href="error.html" class="learn-link">Read More <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4: NEWSLETTER -->
+<section class="newsletter-section">
+  <div class="container fade-up">
+    <h2>Stay Updated with Stackly</h2>
+    <p>Subscribe to our newsletter for weekly recipes, tips, and exclusive offers delivered to your inbox.</p>
+    <form class="newsletter-form" action="error.html">
+      <input type="email" placeholder="Enter your email address" required>
+      <button type="submit" class="btn-primary"><i class="bi bi-send"></i> Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<!-- SECTION 5: CATEGORIES -->
+<section class="categories-section">
+  <div class="container fade-up">
+    <div class="section-subtitle">Browse by</div>
+    <h2 class="section-title">Categories</h2>
+    <div class="category-pills">
+      <a href="error.html" class="category-pill"><i class="bi bi-egg-fried"></i> Recipes <span class="count">24</span></a>
+      <a href="error.html" class="category-pill"><i class="bi bi-heart-pulse"></i> Health <span class="count">18</span></a>
+      <a href="error.html" class="category-pill"><i class="bi bi-lightbulb"></i> Tips <span class="count">15</span></a>
+      <a href="error.html" class="category-pill"><i class="bi bi-newspaper"></i> Industry News <span class="count">12</span></a>
+      <a href="error.html" class="category-pill"><i class="bi bi-cup-hot"></i> Lifestyle <span class="count">9</span></a>
+      <a href="error.html" class="category-pill"><i class="bi bi-globe2"></i> Travel & Food <span class="count">7</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="navbar-brand"><img src="images/logo.webp" alt="Stackly Logo" class="logo-img"><span class="brand-text">Stackly</span></a>
+        <p>Premium culinary experiences from farm to table. Crafted with love, served with passion.</p>
+        <div class="footer-socials"><a href="error.html"><i class="bi bi-facebook"></i></a><a href="error.html"><i class="bi bi-twitter-x"></i></a><a href="error.html"><i class="bi bi-instagram"></i></a><a href="error.html"><i class="bi bi-linkedin"></i></a><a href="error.html"><i class="bi bi-youtube"></i></a></div>
+      </div>
+      <div class="footer-column"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="error.html">Careers</a></li><li><a href="blog.html">Blog</a></li><li><a href="error.html">Press</a></li></ul></div>
+      <div class="footer-column"><h4>Services</h4><ul><li><a href="services.html">Catering</a></li><li><a href="error.html">Private Dining</a></li><li><a href="error.html">Cooking Classes</a></li><li><a href="error.html">Meal Plans</a></li></ul></div>
+      <div class="footer-column"><h4>Support</h4><ul><li><a href="contact.html">Contact Us</a></li><li><a href="error.html">FAQ</a></li><li><a href="error.html">Privacy Policy</a></li><li><a href="error.html">Terms of Service</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2024 Stackly Food Industries. All rights reserved.</p></div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
