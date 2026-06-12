@@ -9,9 +9,15 @@
 </head>
 <body>
 
-<button class="sidebar-toggle" onclick="document.querySelector('.sidebar').classList.toggle('active')">
-  <i class="bi bi-list"></i>
-</button>
+<div class="mobile-header">
+  <button class="sidebar-toggle" onclick="document.querySelector('.sidebar').classList.toggle('active')">
+    <i class="bi bi-list"></i>
+  </button>
+  <a href="index.html" class="mobile-brand">
+    <img src="images/logo.webp" alt="Stackly Logo" class="mobile-logo">
+    <span>Stackly</span>
+  </a>
+</div>
 
 <div class="dashboard">
   <!-- Sidebar -->
